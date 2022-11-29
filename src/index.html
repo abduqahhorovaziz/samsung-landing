@@ -54,12 +54,21 @@
         </ul>
 
         <div class="flex items-center md:ml-auto">
-          <div
+          <!-- <div
             class="md:bg-[#F6F6F6] bg-transparent md:w-[342px] md:px-[21px] md:rounded-full flex items-center md:mr-10">
             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search"
-              class="md:inline hidden py-[13px] w-full outline-none pl-2 bg-transparent">
-          </div>
+              class="md:inline hidden py-[13px] w-full outline-none pl-2 bg-transparent focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1">
+          </div> -->
+          <label class="relative block md:mr-10">
+            <span class="sr-only">Search</span>
+            <span class="absolute inset-y-0 left-0 flex items-center pl-4">
+              <i class="fa-sharp fa-solid fa-magnifying-glass text-slate-400"></i>
+            </span>
+            <input
+              class="md:w-[342px] md:inline hidden py-[13px] w-full outline-none pl-11 bg-transparent placeholder:text-slate-400  bg-white border border-slate-300 rounded-full pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+              placeholder="Search" type="text" name="search" />
+          </label>
           <div class="hidden md:flex items-center gap-x-10">
             <a href="#" class="text-xl hover:text-gray-400 transition duration-150 ease-in"><i
                 class="fa-regular fa-compass"></i></a>
@@ -153,8 +162,8 @@
             </li>
           </ul>
           <button class="md:hidden block text-[30px]">...</button>
-          <a href="#" class="py-3 flex items-center lg:text-[20px] text-[14px] md:ml-auto font-medium">Ko'proq <i
-              class="fa-solid fa-chevron-right"></i></a>
+          <a href="#" class="py-3 flex items-center lg:text-[20px] text-[14px] md:ml-auto font-medium hover:opacity-50 transition duration-300 ease">Ko'proq <i
+              class="fa-solid fa-chevron-right ml-4 text-sm mt-1"></i></a>
         </div>
 
         <div id="tab-contents">
@@ -162,7 +171,7 @@
           <div id="first" class="w-full">
             <div class="flex justify-between md:gap-x-[4px]">
               <div
-                class="w-1/2 text-center md:pt-14 pt-8 md:px-[117px] px-[50px] mb:pb-[38px] pb-[20px] border flex flex-col items-center justify-between hover:shadow-card-shadow hover:border-transparent ease duration-300 transition-all overflow-hidden">
+                class="w-1/2 text-center md:pt-14 pt-8 md:px-[117px] px-[50px] mb:pb-[38px] pb-[20px] border flex flex-col items-center justify-between hover:shadow-card-shadow hover:border-transparent ease duration-300 transition-all overflow-hidden cursor-pointer">
                 <div>
                   <img class="inline-block md:mb-[42px] mb-[20px]" src="./img/cards/card-1.jpg" alt="card-1">
                 </div>
@@ -179,7 +188,7 @@
               </div>
 
               <div
-                class="w-1/2 text-center md:pt-14 pt-8 md:px-[117px] px-[50px] mb:pb-[38px] pb-[20px] border hover:shadow-card-shadow hover:border-transparent ease duration-300 transition-all">
+                class="w-1/2 text-center md:pt-14 pt-8 md:px-[117px] px-[50px] mb:pb-[38px] pb-[20px] border hover:shadow-card-shadow hover:border-transparent ease duration-300 transition-all cursor-pointer">
                 <div>
                   <img class="inline-block mb-[42px]" src="./img/cards/card-2.jpg" alt="card-1">
                 </div>
@@ -193,8 +202,8 @@
               </div>
 
             </div>
-            <div class="flex md:flex-nowrap flex-wrap justify-between md:gap-x-[4px] md:mt-[4px]">
 
+            <div class="flex md:flex-nowrap flex-wrap justify-between md:gap-x-[4px] md:mt-[4px]">
               <div
                 class="md:w-1/3 w-1/2 flex flex-col items-center justify-between text-center md:py-[44px] py-[20px] md:px-[52px] px-[20px] border hover:shadow-card-shadow hover:border-transparent ease duration-300 transition-all">
                 <div>
@@ -613,7 +622,9 @@
             <li class="md:mb-[30px]"><a href="#"
                 class="opacity-50 md:text-[16px] md:leading-[19px] hover:opacity-100 transition duration-300 ease">Планшет</a>
             </li>
-            <li class="md:mb-[30px]"><a href="#" class="opacity-50 md:text-[16px] md:leading-[19px] hover:opacity-100 transition duration-300 ease">Аксессуары</a></li>
+            <li class="md:mb-[30px]"><a href="#"
+                class="opacity-50 md:text-[16px] md:leading-[19px] hover:opacity-100 transition duration-300 ease">Аксессуары</a>
+            </li>
             <li class="md:mb-[30px]"><a href="#"
                 class="opacity-50 md:text-[16px] md:leading-[19px] hover:opacity-100 transition duration-300 ease">Умный
                 ключ</a></li>
@@ -734,12 +745,18 @@
         <hr class="mt-[30px]">
 
         <div class="flex justify-between items-center mt-[23px]">
-          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i class="fa-brands fa-telegram"></i></a>
-          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i
+              class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i
+              class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-xl hover:opacity-50 transition-all duration-300 ease"><i
+              class="fa-brands fa-youtube"></i></a>
         </div>
 
       </div>
