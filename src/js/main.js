@@ -19,6 +19,7 @@ owl.owlCarousel({
     loop: true,
     items: 1,
     nav: false,
+    dots: false,
 });
 
 $('.nextSliderBtn').click(function () {
