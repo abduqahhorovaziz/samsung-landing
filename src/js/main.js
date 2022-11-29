@@ -3,30 +3,30 @@ const mobileNav = document.querySelector("#mobileNav");
 const closeNavBtn = document.querySelector("#closeBtn");
 
 openNavBtn.onclick = function () {
-    mobileNav.classList.remove('top-[-300%]');
-    mobileNav.classList.add('top-0');
+  mobileNav.classList.remove('top-[-300%]');
+  mobileNav.classList.add('top-0');
 }
 
 closeNavBtn.onclick = function () {
-    mobileNav.classList.add('top-[-300%]');
-    mobileNav.classList.remove('top-0');
+  mobileNav.classList.add('top-[-300%]');
+  mobileNav.classList.remove('top-0');
 }
 
 
 const owl = $('.owl-carousel');
 
 owl.owlCarousel({
-    loop: true,
-    items: 1,
-    nav: false,
-    dots: false,
+  loop: true,
+  items: 1,
+  nav: false,
+  dots: false,
 });
 
 $('.nextSliderBtn').click(function () {
-    owl.trigger('next.owl.carousel');
+  owl.trigger('next.owl.carousel');
 })
 $('.prevSliderBtn').click(function () {
-    owl.trigger('prev.owl.carousel', [300]);
+  owl.trigger('prev.owl.carousel', [300]);
 });
 
 
@@ -35,8 +35,8 @@ let tabsContainer = document.querySelector("#tabs");
 let tabTogglers = tabsContainer.querySelectorAll("a");
 console.log(tabTogglers);
 
-tabTogglers.forEach(function(toggler) {
-  toggler.addEventListener("click", function(e) {
+tabTogglers.forEach(function (toggler) {
+  toggler.addEventListener("click", function (e) {
     e.preventDefault();
 
     let tabName = this.getAttribute("href");
@@ -45,7 +45,7 @@ tabTogglers.forEach(function(toggler) {
 
     for (let i = 0; i < tabContents.children.length; i++) {
 
-      tabTogglers[i].parentElement.classList.remove("border-black", "border-b",  "-mb-px", "opacity-100");  tabContents.children[i].classList.remove("hidden");
+      tabTogglers[i].parentElement.classList.remove("border-black", "border-b", "-mb-px", "opacity-100"); tabContents.children[i].classList.remove("hidden");
       if ("#" + tabContents.children[i].id === tabName) {
         continue;
       }
@@ -57,3 +57,16 @@ tabTogglers.forEach(function(toggler) {
 });
 
 document.getElementById("default-tab").click();
+
+let acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
