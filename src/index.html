@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung</title>
+  <link rel="stylesheet" href="../dist/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-roboto">
+
+  <header class="py-[20px]">
+    <div class="container mx-auto">
+      <nav class="flex items-center justify-between md:px-0 px-4">
+
+        <div class="md:hidden">
+          <button type="button" id="openNavBtn">
+            <span class="w-[17px] h-[2px] block bg-black mb-1"></span>
+            <span class="w-[17px] h-[2px] block bg-black mb-1"></span>
+            <span class="w-[17px] h-[2px] block bg-black"></span>
+          </button>
+        </div>
+
+        <div class="pr-10 ">
+          <img src="./img/Logo.svg" alt="Logo">
+        </div>
+
+        <ul
+          class="absolute md:static w-full md:w-auto h-full p-4 md:p-0 md:w-inherit top-[-300%] left-0 bg-slate-200 md:bg-transparent md:normal-case flex-col md:flex-row flex items-center justify-evenly uppercase gap-x-[50px] font-medium text-[16px] leading-[19px] tracking-[-0.02em] "
+          id="mobileNav">
+
+          <button class="md:hidden md:static absolute top-4 left-4 text-xl" id="closeBtn"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+
+          <li><a href="#" class="hover:text-gray-400 transition duration-150 ease-in">Mobil qurilmalar</a></li>
+          <li><a href="#" class="hover:text-gray-400 transition duration-150 ease-in">TV va Audio</a></li>
+          <li><a href="#" class="hover:text-gray-400 transition duration-150 ease-in">Uy uchun</a></li>
+          <li><a href="#" class="hover:text-gray-400 transition duration-150 ease-in">IT</a></li>
+        </ul>
+
+        <div class="flex items-center md:ml-auto">
+          <div
+            class="md:bg-[#F6F6F6] bg-transparent md:w-[342px] md:px-[21px] md:rounded-full flex items-center md:mr-10">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search"
+              class="md:inline hidden py-[13px] w-full outline-none pl-2 bg-transparent">
+          </div>
+          <div class="hidden md:flex items-center gap-x-10">
+            <a href="#" class="text-xl hover:text-gray-400 transition duration-150 ease-in"><i
+                class="fa-regular fa-compass"></i></a>
+            <a href="#" class="text-xl hover:text-gray-400 transition duration-150 ease-in"><i
+                class="fa-regular fa-percent"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
