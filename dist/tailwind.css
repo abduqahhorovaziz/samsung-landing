@@ -1059,6 +1059,10 @@ video {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .leading-\[19px\] {
   line-height: 19px;
 }
@@ -1151,6 +1155,14 @@ video {
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:shadow-card-shadow:hover {
@@ -1251,6 +1263,46 @@ video {
     margin-right: 35px;
   }
 
+  .md\:mb-\[\] {
+    margin-bottom: ;
+  }
+
+  .md\:mb-\[5px\] {
+    margin-bottom: 5px;
+  }
+
+  .md\:mb-\[47p\] {
+    margin-bottom: 47p;
+  }
+
+  .md\:mb-\[47px\] {
+    margin-bottom: 47px;
+  }
+
+  .md\:mb-\[7px\] {
+    margin-bottom: 7px;
+  }
+
+  .md\:mb-\[59px\] {
+    margin-bottom: 59px;
+  }
+
+  .md\:mb-\[16px\] {
+    margin-bottom: 16px;
+  }
+
+  .md\:mr-\[20px\] {
+    margin-right: 20px;
+  }
+
+  .md\:mb-\[49px\] {
+    margin-bottom: 49px;
+  }
+
+  .md\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1289,6 +1341,10 @@ video {
 
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:max-w-\[265px\] {
+    max-width: 265px;
   }
 
   .md\:flex-row {
@@ -1382,6 +1438,22 @@ video {
     padding-bottom: 75px;
   }
 
+  .md\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .md\:pt-\[116px\] {
+    padding-top: 116px;
+  }
+
+  .md\:pb-\[\] {
+    padding-bottom: ;
+  }
+
+  .md\:pb-\[94px\] {
+    padding-bottom: 94px;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1406,6 +1478,30 @@ video {
     font-size: 22px;
   }
 
+  .md\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  @media (min-width: 768px) {
+    .md\:md\:text-\[16px\] {
+      font-size: 16px;
+    }
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:font-bold {
+    font-weight: 700;
+  }
+
   .md\:normal-case {
     text-transform: none;
   }
@@ -1424,6 +1520,22 @@ video {
 
   .md\:leading-\[29px\] {
     line-height: 29px;
+  }
+
+  .md\:leading-\[\] {
+    line-height: ;
+  }
+
+  .md\:leading-\[19px\] {
+    line-height: 19px;
+  }
+
+  .md\:text-\[\] {
+    color: ;
+  }
+
+  .md\:text-\[5xl\] {
+    color: 5xl;
   }
 }
 
