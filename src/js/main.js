@@ -18,6 +18,8 @@ const owl = $('.owl-carousel');
 owl.owlCarousel({
   loop: true,
   items: 1,
+  autoplay: true,
+  autoplayTimeout: 3000,
   nav: false,
   dots: false,
 });
@@ -70,3 +72,19 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// const owlItem = document.querySelectorAll('.owl-item');
+// const progressBar = document.querySelectorAll('.progress-bar');
+// owlItem.forEach(item => {
+//   if(item.classList.contains('active')){
+//     console.log('active');
+//     progressBar.forEach(bar => {
+//       bar.classList.add('animate-progress')
+//     })
+//   } else{
+//     progressBar.forEach(bar => {
+//       bar.classList.remove('animate-progress')
+//     })
+    
+//   }
+// })

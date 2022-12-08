@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      keyframes: {
+        progress: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        }
+      },
+      animation: {
+        'progress': 'progress 3s linear infinite',
+      },
       backgroundImage: {
         'slide-one': "url('/src/img/slider/bg-1.jpg')",
         'slide-two': "url('/src/img/slider/bg-2.jpg')",
