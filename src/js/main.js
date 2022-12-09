@@ -19,7 +19,7 @@ owl.owlCarousel({
   loop: true,
   items: 1,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 5000,
   nav: false,
   dots: false,
 });
@@ -28,7 +28,7 @@ $('.nextSliderBtn').click(function () {
   owl.trigger('next.owl.carousel');
 })
 $('.prevSliderBtn').click(function () {
-  owl.trigger('prev.owl.carousel', [300]);
+  owl.trigger('prev.owl.carousel', [500]);
 });
 
 

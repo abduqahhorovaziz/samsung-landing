@@ -813,7 +813,7 @@ video {
 }
 
 .animate-progress {
-  animation: progress 3s linear infinite;
+  animation: progress 5s linear infinite;
 }
 
 .cursor-pointer {
@@ -881,6 +881,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -928,14 +932,6 @@ video {
 
 .bg-\[\#ffffff21\] {
   background-color: #ffffff21;
-}
-
-.bg-slide-three {
-  background-image: url('/src/img/slider/bg-3.jpg');
-}
-
-.bg-slide-four {
-  background-image: url('/src/img/slider/bg-4.jpg');
 }
 
 .bg-slide-five {

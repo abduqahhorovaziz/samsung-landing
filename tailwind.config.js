@@ -10,7 +10,7 @@ module.exports = {
         }
       },
       animation: {
-        'progress': 'progress 3s linear infinite',
+        'progress': 'progress 5s linear infinite',
       },
       backgroundImage: {
         'slide-one': "url('/src/img/slider/bg-1.jpg')",
